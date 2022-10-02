@@ -3,7 +3,9 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
 const eventSchema = new Schema({
-    timestamps: true
+  type: Date,
+},{
+  timestamps: true
 })
 
 
