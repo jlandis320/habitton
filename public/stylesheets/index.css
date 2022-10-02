@@ -1,0 +1,35 @@
+p {
+  width: 50vw; 
+  text-align: justify;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid #b9faf8;
+}
+
+.links{
+  display: flex;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color:#b9faf8;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.links:hover{
+  background-color: #6f2dbd;
+  cursor: pointer;
+  border: 2px solid #b9faf8;
+}
+
+.links a:hover{
+  color: #b9faf8;
+}
+
+.links > a {
+  width: 200px;
+  height: 100px;
+  padding-top: 40px;
+}
