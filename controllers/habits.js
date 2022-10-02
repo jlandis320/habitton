@@ -14,10 +14,13 @@ function index(req,res){
 })
 }
 
-function create(req, res){
-  
+function newHabit(req, res){
+  res.render("habits/new"),{
+    title: "Make A Habit"
+  }
 }
 
 export {
-  index
+  index,
+  newHabit as new
 }
