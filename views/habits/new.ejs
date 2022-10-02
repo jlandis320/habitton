@@ -1,1 +1,26 @@
-I'm the new habit page!
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/new.css"/>
+<%- include('../partials/nav') %>
+
+<main>
+<h1><%= title %> </h1>
+<div class="content-card">
+<p>Ready to start building a new habit?</p>
+<p>Select a category and enter the habit below:</p>
+<form id="new-form" action="/habits" method="POST">
+    <label for="category-select">Category:</label>
+    <select name="cateory" id="category-select">
+      <option value="Health">Health</option>
+      <option value="Work">Work</option>
+      <option value="Relationship">Relationship</option>
+      <option value="Fitness">Fitness</option>
+    </select></br>
+    <label for="habit-input">Habit:</label>
+    <input type="text" name="habit" id="habit-input"><br>
+    <button type="submit">Make Habit</button>
+</form>
+</div>
+</main>
+
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,26 @@
+form > *{
+  margin: 15px;
+}
+
+.content-card{
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: #B9FAF8;
+  border-radius: 20px;
+  /* margin-top: 5vh; */
+  text-align: center;
+}
+
+.content-card button {
+  align-self: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* add shadows to boxes */
+/* make button bigger?  */
+/* change input & select css */
+

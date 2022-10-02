@@ -15,12 +15,25 @@ function index(req,res){
 }
 
 function newHabit(req, res){
-  res.render("habits/new"),{
+  res.render("habits/new",{
     title: "Make A Habit"
-  }
+  })
+}
+
+function create(req, res) {
+  Habit.create(req.body)
+  .then(habit => {
+    console.log(habit)
+    res.redirect("/habits/")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/habits/new")
+  })
 }
 
 export {
   index,
-  newHabit as new
+  newHabit as new,
+  create
 }

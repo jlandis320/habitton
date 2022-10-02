@@ -7,6 +7,8 @@ router.get('/', habitsCtrl.index)
 
 router.get('/new', habitsCtrl.new)
 
+router.post("/", habitsCtrl.create)
+
 export {
   router
 }
