@@ -61,7 +61,14 @@ function edit(req, res){
 }
 
 function update(req, res){
-  console.log("i'm updating!")
+  Habit.findByIdAndUpdate(req.params.id, req.body, {new: true})
+  .then(habit => {
+    res.redirect(`/habits/${habit._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/habits/edit")
+  })
 }
 
 export {
