@@ -12,6 +12,7 @@ const eventSchema = new Schema({
 const habitSchema = new Schema({
   habit: {
     type: String,
+    
   },
   category: {
     type: String,

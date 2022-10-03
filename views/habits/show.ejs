@@ -1,0 +1,25 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/show.css"/>
+<%- include('../partials/nav') %>
+
+<main>
+  <h1><%= title %> </h1>
+    <div class="habit-card">
+    <div id="category"><%= habit.category %></div>
+    <p><%= habit.habit %></p>
+  </div>
+  <p></p>
+  <div class="habit-card content-card">
+    Did you <%= habit.habit.toLowerCase() %> today? <br>
+    <button>Yes!</button>
+  </div>
+  <p></p>
+  <div class="content-card">
+    <a href="/habits/<%= habit._id %>/edit">
+    <button>✎</button>
+    </a>
+    <button>☓</button>
+  </div>
+</main>
+
+<%- include('../partials/footer') %>

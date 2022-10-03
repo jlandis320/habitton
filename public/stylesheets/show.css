@@ -1,0 +1,39 @@
+.habit-card {
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: #B9FAF8;
+  border-radius: 20px;
+  /* margin-top: 5vh; */
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#category {
+  display: flex;
+  text-align: left;
+  font-size: small;
+  background-color: #B298DC;
+  color: #B9FAF8;
+  padding-top: 8px;
+  padding-left: 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.content-card {
+  padding: 2%;
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: #B9FAF8;
+  border-radius: 20px;
+  /* margin-top: 5vh; */
+  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+

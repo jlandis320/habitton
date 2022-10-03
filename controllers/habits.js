@@ -32,8 +32,38 @@ function create(req, res) {
   })
 }
 
+function show(req, res){
+  Habit.findById(req.params.id)
+  .then(habit => {
+    res.render("habits/show", {
+    title: "Track Your Habit",
+    habit: habit,
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/habits/show")
+  })
+}
+
+function edit(req, res){
+  Habit.findById(req.params.id)
+  .then(habit => {
+    res.render("habits/edit", {
+      habit: habit,
+      title: "Edit Your Habit"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/habits/edit")
+  })
+}
+
 export {
   index,
   newHabit as new,
-  create
+  create,
+  show,
+  edit
 }

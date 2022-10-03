@@ -7,7 +7,13 @@ router.get('/', habitsCtrl.index)
 
 router.get('/new', habitsCtrl.new)
 
+router.get('/:id', habitsCtrl.show)
+
+router.get('/:id/edit', habitsCtrl.edit)
+
 router.post("/", habitsCtrl.create)
+
+
 
 export {
   router

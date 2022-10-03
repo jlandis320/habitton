@@ -1,12 +1,17 @@
 <%- include('../partials/html-head') %>
-
+<link rel="stylesheet" href="/stylesheets/habits.css"/>  
 <%- include('../partials/nav') %>
 
 <main>
   <h1><%= title %> </h1>
   <% habits.forEach(habit => { %> 
-    <p><%= habit.category %> </p>
-    <p><%= habit.habit %> </p>
+    <a href="/habits/<%= habit.id %> ">
+    <div class="habit-card">
+    <div id="category"><%= habit.category %></div>
+    <p><%= habit.habit %></p>
+  </div>
+  </a>
+  <p></p>
     <% }) %> 
 </main>
 
