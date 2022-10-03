@@ -51,7 +51,7 @@ function edit(req, res){
   .then(habit => {
     res.render("habits/edit", {
       habit: habit,
-      title: "Edit Your Habit"
+      title: `Edit "${habit.habit}"`
     })
   })
   .catch(err => {
@@ -60,10 +60,15 @@ function edit(req, res){
   })
 }
 
+function update(req, res){
+  console.log("i'm updating!")
+}
+
 export {
   index,
   newHabit as new,
   create,
   show,
-  edit
+  edit,
+  update
 }

@@ -13,7 +13,7 @@ router.get('/:id/edit', habitsCtrl.edit)
 
 router.post("/", habitsCtrl.create)
 
-
+router.put("/:id", habitsCtrl.update)
 
 export {
   router

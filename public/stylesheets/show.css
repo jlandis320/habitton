@@ -2,7 +2,7 @@
   min-width: 10vw;
   width: 80vw;
   padding: 10px;
-  background-color: #B9FAF8;
+  background-color: aliceblue;
   border-radius: 20px;
   /* margin-top: 5vh; */
   text-align: center;
@@ -17,7 +17,7 @@
   text-align: left;
   font-size: small;
   background-color: #B298DC;
-  color: #B9FAF8;
+  color: aliceblue;
   padding-top: 8px;
   padding-left: 10px;
   border-radius: 20px 20px 0 0;
@@ -28,7 +28,7 @@
   min-width: 10vw;
   width: 80vw;
   padding: 10px;
-  background-color: #B9FAF8;
+  background-color: aliceblue;
   border-radius: 20px;
   /* margin-top: 5vh; */
   text-align: center;

@@ -49,3 +49,21 @@ a, a:visited {
 .fa-clipboard-list, .fa-plus {
   margin-right: 10px;
 }
+
+.content-card{
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  /* margin-top: 5vh; */
+  text-align: center;
+}
+
+.content-card button {
+  align-self: center;
+}
+
+form > *{
+  margin: 15px;
+}
