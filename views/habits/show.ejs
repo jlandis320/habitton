@@ -18,7 +18,9 @@
     <a href="/habits/<%= habit._id %>/edit">
     <button>✎</button>
     </a>
+    <form action="/habits/<%= habit.id %>?_method=DELETE" method="POST">
     <button>☓</button>
+    </form>
   </div>
 </main>
 

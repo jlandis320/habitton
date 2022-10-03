@@ -71,11 +71,23 @@ function update(req, res){
   })
 }
 
+function deleteHabit(req, res){
+  Habit.findByIdAndDelete(req.params.id)
+  .then(habit => {
+    res.redirect("/habits")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/habits/show")
+  })
+}
+
 export {
   index,
   newHabit as new,
   create,
   show,
   edit,
-  update
+  update,
+  deleteHabit as delete
 }

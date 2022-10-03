@@ -15,6 +15,8 @@ router.post("/", habitsCtrl.create)
 
 router.put("/:id", habitsCtrl.update)
 
+router.delete("/:id", habitsCtrl.delete)
+
 export {
   router
 }
