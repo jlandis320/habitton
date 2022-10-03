@@ -10,9 +10,12 @@ const eventSchema = new Schema({
 
 
 const habitSchema = new Schema({
+  owner: {
+    type: Schema.Types.ObjectId, 
+    ref: "Profile",
+  },
   habit: {
     type: String,
-    
   },
   category: {
     type: String,

@@ -1,7 +1,7 @@
 import { Habit } from "../models/habit.js"
 
 function index(req,res){
-  Habit.find({})
+  Habit.find({ owner: req.user.profile._id })
   .then(habits => {
   res.render("habits/", {
     habits: habits,
@@ -21,6 +21,7 @@ function newHabit(req, res){
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile._id
   Habit.create(req.body)
   .then(habit => {
     console.log(habit)
