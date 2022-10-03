@@ -2,6 +2,12 @@
 
 <%- include('../partials/nav') %>
 
-I'm the habits page!
+<main>
+  <h1><%= title %> </h1>
+  <% habits.forEach(habit => { %> 
+    <p><%= habit.category %> </p>
+    <p><%= habit.habit %> </p>
+    <% }) %> 
+</main>
 
 <%- include('../partials/footer') %>
