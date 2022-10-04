@@ -89,13 +89,9 @@ function deleteHabit(req, res){
 function addEvent(req, res){
   Habit.findById(req.params.id)
   .then(habit => {
-    // if event.createdAt.toLocaleString() === 
     habit.event.push(req.body)
     habit.save() 
     .then(() => {
-      // const dateCreated = new Set(habit.event.map(e => {
-      //   return event.createdAt.toLocaleString().slice(0 , 9) 
-      // }))
       res.redirect(`/habits/${habit._id}`)
     })
     .catch(err => {

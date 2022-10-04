@@ -20,12 +20,11 @@
     <button type="submit">Yes!</button>
     </form>
   </div>
-  <p></p>
+  <div class="content-card" id="dot-box">
   <% dateCreated.forEach(function(event){ %> 
-  <div class="content-card">
-    <%= event %> 
-  </div>
+  <div class="complete-dot" title="<%= event %> "></div>
   <% }) %> 
+  </div>
 </main>
 
 <%- include('../partials/footer') %>

@@ -67,3 +67,17 @@ a, a:visited {
 form > *{
   margin: 15px;
 }
+
+.complete-dot {
+  display: flex;
+  background-color: #A98ED6;
+  border-radius: 50%;
+  height: 1em;
+  width: 1em;
+  margin: 5px;
+}
+
+#dot-box{
+  display: flex;
+  background-color: aliceblue;
+}
