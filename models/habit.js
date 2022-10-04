@@ -3,7 +3,10 @@ import mongoose from "mongoose"
 const Schema = mongoose.Schema
 
 const eventSchema = new Schema({
-  type: Date,
+  date: {
+    type: Date,
+    default: Date.now(),
+  }
 },{
   timestamps: true
 })

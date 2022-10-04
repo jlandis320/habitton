@@ -24,7 +24,6 @@ function create(req, res) {
   req.body.owner = req.user.profile._id
   Habit.create(req.body)
   .then(habit => {
-    console.log(habit)
     res.redirect("/habits/")
   })
   .catch(err => {
@@ -36,9 +35,13 @@ function create(req, res) {
 function show(req, res){
   Habit.findById(req.params.id)
   .then(habit => {
+    const dateCreated = new Set(habit.event.map(e => {
+      return e.createdAt.toLocaleString().slice(0 , 9) 
+    }))
     res.render("habits/show", {
     title: "Track Your Habit",
     habit: habit,
+    dateCreated
     })
   })
   .catch(err => {
@@ -86,23 +89,19 @@ function deleteHabit(req, res){
 function addEvent(req, res){
   Habit.findById(req.params.id)
   .then(habit => {
+    // if event.createdAt.toLocaleString() === 
     habit.event.push(req.body)
-    habit.save()
+    habit.save() 
     .then(() => {
-      console.log("req.body: ", req.body)
-      console.log("habit.event: ", habit.event)
+      // const dateCreated = new Set(habit.event.map(e => {
+      //   return event.createdAt.toLocaleString().slice(0 , 9) 
+      // }))
       res.redirect(`/habits/${habit._id}`)
     })
     .catch(err => {
     console.log(err)
-    console.log("req.body: ", req.body)
     res.redirect("/habits/")
     })
-  .catch(err => {
-    console.log(err)
-    console.log("req.body: ", req.body)
-    res.redirect("/habits/")
-  })
   })
 }
 
