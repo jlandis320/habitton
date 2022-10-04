@@ -83,6 +83,29 @@ function deleteHabit(req, res){
   })
 }
 
+function addEvent(req, res){
+  Habit.findById(req.params.id)
+  .then(habit => {
+    habit.event.push(req.body)
+    habit.save()
+    .then(() => {
+      console.log("req.body: ", req.body)
+      console.log("habit.event: ", habit.event)
+      res.redirect(`/habits/${habit._id}`)
+    })
+    .catch(err => {
+    console.log(err)
+    console.log("req.body: ", req.body)
+    res.redirect("/habits/")
+    })
+  .catch(err => {
+    console.log(err)
+    console.log("req.body: ", req.body)
+    res.redirect("/habits/")
+  })
+  })
+}
+
 export {
   index,
   newHabit as new,
@@ -90,5 +113,6 @@ export {
   show,
   edit,
   update,
-  deleteHabit as delete
+  deleteHabit as delete,
+  addEvent
 }

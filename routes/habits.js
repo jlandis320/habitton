@@ -14,9 +14,12 @@ router.get('/:id/edit', isLoggedIn, habitsCtrl.edit)
 
 router.post("/", isLoggedIn, habitsCtrl.create)
 
+router.post("/:id/events", isLoggedIn, habitsCtrl.addEvent)
+
 router.put("/:id", isLoggedIn, habitsCtrl.update)
 
 router.delete("/:id", isLoggedIn, habitsCtrl.delete)
+
 
 export {
   router

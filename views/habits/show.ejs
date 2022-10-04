@@ -16,12 +16,16 @@
   </div>
   <div class="content-card">
     Did you <%= habit.habit.toLowerCase() %> today? <br>
-    <form >
-    <button>Yes!</button>
+    <form action="/habits/<%= habit.id %>/events" method="POST">
+    <button type="submit">Yes!</button>
     </form>
   </div>
   <p></p>
+  <% habit.event.forEach(function(event){ %> 
+  <div class="content-card">
+    <%= event.createdAt.toLocaleString() %> 
   </div>
+  <% }) %> 
 </main>
 
 <%- include('../partials/footer') %>
