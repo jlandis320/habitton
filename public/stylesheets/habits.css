@@ -11,6 +11,12 @@
   padding-right: 0;
 }
 
+.habit-card:hover {
+  background-color: #b298dc43;
+  color: #45157c;
+  transition: all 0.5s;
+}
+
 #category {
   display: flex;
   text-align: left;
@@ -20,8 +26,4 @@
   padding-top: 8px;
   padding-left: 10px;
   border-radius: 20px 20px 0 0;
-}
-
-#clipboard {
-  background-color: none;
 }

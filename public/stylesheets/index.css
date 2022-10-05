@@ -6,6 +6,8 @@ p {
 img {
   border-radius: 50%;
   border: 2px solid aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .links{
@@ -13,7 +15,7 @@ img {
   width: 200px;
   height: 100px;
   text-align: center;
-  background-color: #B298DC;
+  background-color: #c8abf8;
   margin-top: 20px;
   border-radius: 20px;
 }
