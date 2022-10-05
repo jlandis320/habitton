@@ -5,7 +5,7 @@ p {
 
 img {
   border-radius: 50%;
-  border: 2px solid #6F2DBD;
+  border: 2px solid aliceblue;
 }
 
 .links{
@@ -22,10 +22,12 @@ img {
   background-color: #6f2dbd;
   cursor: pointer;
   border: 2px solid aliceblue;
+  transition: all 0.5s;
 }
 
 .links a:hover{
   color: aliceblue;
+  transition: all 0.5s;
 }
 
 .links > a {
