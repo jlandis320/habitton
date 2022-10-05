@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "CantataOne";
+  src: url(../assets/CantataOne-Regular.ttf);
+}
 
 html {
   box-sizing: border-box;
@@ -28,6 +31,12 @@ nav {
   align-items: center;
   padding: 10px;
   min-height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+h1 {
+  font-family: "CantataOne";
 }
 
 main {
@@ -64,8 +73,15 @@ a, a:visited {
   align-self: center;
 }
 
-form > *{
+form > * {
   margin: 15px;
+}
+
+
+#dot-box{
+  display: flex;
+  background-color: aliceblue;
+  flex-wrap: wrap;
 }
 
 .complete-dot {
@@ -77,7 +93,31 @@ form > *{
   margin: 5px;
 }
 
-#dot-box{
-  display: flex;
+input[type=text]{
+  padding: 10px;
+  border: 0;
   background-color: aliceblue;
+  border-bottom: 2px solid #6F2DBD;
+  margin: 0;
+  font-family: inherit;
+  background-color: #b298dc43;
+  border-radius: 5px 5px 0 0;
 }
+
+form > label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+input[type=text]:focus {
+  background-color: #b298dc81;
+}
+
+input::selection{
+  outline: #b298dc81;
+}
+
+.content-card, 
+.habit-card,
+.links {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
