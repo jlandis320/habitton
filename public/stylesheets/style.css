@@ -31,12 +31,13 @@ nav {
   align-items: center;
   padding: 10px;
   min-height: 60px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 7px;
 }
 
 
 h1 {
   font-family: "CantataOne";
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 main {
@@ -111,13 +112,16 @@ form > label {
 
 input[type=text]:focus {
   background-color: #b298dc81;
+  border-bottom: 5px solid #6F2DBD;
+  transition: all 0.5s;
+  outline: solid 1px #B298DC;
 }
 
 input::selection{
-  outline: #b298dc81;
+  outline: none;
 }
 
 .content-card, 
 .habit-card,
 .links {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 11px;}
