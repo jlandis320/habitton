@@ -27,3 +27,12 @@
   padding-left: 10px;
   border-radius: 20px 20px 0 0;
 }
+
+.habit-card:active {
+  transform: scale(.80);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+p {
+  padding: 3px;
+}

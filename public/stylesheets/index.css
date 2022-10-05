@@ -37,3 +37,8 @@ img {
   height: 100px;
   padding-top: 40px;
 }
+
+.links:active {
+  transform: scale(.80);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
