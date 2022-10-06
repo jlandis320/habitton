@@ -1,6 +1,8 @@
 # Welcome to Habitton
 
-Habitton helps you create new daily habits. Log in with your Google account, makea a new habit, and view all your habits. 
+Habitton helps you create new daily habits. Log in with your Google account, make new habits, and view all your habits. 
+
+Once you log in, you'll see links to create a new habit or view all your habits. "Make A Habit" takes you to the new habit view, where you can select a habit category and create a habit. "See Your Habits" brings you to a view of all your habits. From there, you can click on a habit to mark it complete for that day, or edit/delete the habit. 
 
 Mark your habits as complete each day and rack up completion dots. 
 
