@@ -9,12 +9,14 @@
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
+  transition: transform 0.5s;
 }
 
 .habit-card:hover {
   background-color: #b298dc43;
   color: #45157c;
   transition: all 0.5s;
+  transform: scale(105%);
 }
 
 #category {
