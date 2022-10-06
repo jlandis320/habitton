@@ -5,6 +5,14 @@
 <main>
 <h1><%= title %> </h1>
 <div class="content-card">
+  <div class="q-btn">
+    <button type="button" 
+      class="btn btn-outline-secondary" 
+      data-bs-toggle="popover" 
+      title="Making A Good Habit" 
+      data-bs-content="Good habits are specific, measurable, attainable, relevant, and timely. Think 'Work out for 15 mintues, not 'Get huge.'">?
+    </button>
+  </div>
 <p>Ready to start building a new habit?</p>
 <p>Select a category and enter the habit below:</p>
 <form id="new-form" action="/habits" method="POST">

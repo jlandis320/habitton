@@ -63,9 +63,14 @@ a, a:visited {
 }
 
 nav a:hover, i:hover {
+  text-decoration: none;
   color: aliceblue;
   transition: all 0.5s;
-  transform: scale(150%);
+  transform: scale(130%);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 a, i {

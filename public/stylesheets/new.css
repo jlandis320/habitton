@@ -16,7 +16,11 @@ p {
   text-align: center;
 }
 
-/* add shadows to boxes */
-/* make button bigger?  */
-/* change input & select css */
+.q-btn {
+  display:flex;
+  justify-content: end;
+}
 
+.btn-outline-secondary {
+  border-radius: 50%;
+}
