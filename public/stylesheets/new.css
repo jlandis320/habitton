@@ -21,6 +21,31 @@ p {
   justify-content: end;
 }
 
-.btn-outline-secondary {
+svg {
+  height: 2em;
+  width: 2em;
+  color: #8556d0;
+}
+
+.btn {
   border-radius: 50%;
+  border: none;
+  padding: 0;
+  height: 2em;
+  width: 2em;
+}
+
+.btn {
+  background-color: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.popover-header, 
+.popover-body {
+  font-family: "Theano";
 }
