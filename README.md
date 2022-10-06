@@ -1,10 +1,14 @@
 # Welcome to Habitton
 
+Habitton helps you create new daily habits. Log in with your Google account, makea a new habit, and view all your habits. 
+
+Mark your habits as complete each day and rack up completion dots. 
+
 ## Getting Started
 
-Planning Materials: https://trello.com/b/4zHD4W1o/habitton
+[Planning Materials](https://trello.com/b/4zHD4W1o/habitton)
 
-Use Habitton here: https://habitton.fly.dev/
+[Launch Habitton](https://habitton.fly.dev/)
 
 ## Screenshots
 
