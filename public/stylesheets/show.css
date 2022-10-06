@@ -31,3 +31,11 @@
 form {
   display: inline;
 }
+
+svg {
+  height: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
