@@ -16,9 +16,9 @@ Javascript, HTML, CSS, Express, MongoDB, Node.js, Google OAuth, Azure
 
 ## Next Steps
 
-- [] Add a comment log for each habit with timestamped comments.
-- [] Group habits by category.
-- [] Replace complete dots with a 7x7 grid -- if a habit is completed, a square will fill in, if a day is missed, the square is left blank.
+- [ ] Add a comment log for each habit with timestamped comments.
+- [ ] Group habits by category.
+- [ ] Replace complete dots with a 7x7 grid -- if a habit is completed, a square will fill in, if a day is missed, the square is left blank.
 
 ## Thanks to
 
