@@ -10,18 +10,14 @@ img {
 
 }
 
-
-
 .links:hover{
-  background-color: #6f2dbd;
   cursor: pointer;
-  border: 2px solid aliceblue;
   transform: scale(110%);
   transition: transform 0.5s;
 }
 
 .links a:hover{
-  color: aliceblue;
+  color: #6f2dbd;
   transition: all 0.5s;
 }
 
@@ -29,6 +25,7 @@ img {
   width: 200px;
   height: 100px;
   padding-top: 40px;
+  font-size: large;
 }
 
 .links:active {

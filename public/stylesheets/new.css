@@ -1,6 +1,6 @@
 .content-card{
   min-width: 10vw;
-  width: 80vw;
+  max-width: 60vw;
   padding: 10px;
   background-color: aliceblue;
   border-radius: 20px;
@@ -47,5 +47,19 @@ svg {
 .popover-header, 
 .popover-body {
   font-family: "Theano";
+}
+
+@media only screen and (max-width:375px) {
+  p {
+    font-size: 20px;
+  }
+  
+  .select {
+    flex-wrap: wrap;
+  }
+
+  .textarea {
+    flex-wrap: wrap;
+  }
 }
 
