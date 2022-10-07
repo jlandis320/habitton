@@ -44,6 +44,7 @@ h1 {
   font-family: "CantataOne", Georgia, 'Times New Roman', Times, serif;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+  margin: 1rem;
 }
 
 main {
@@ -87,7 +88,6 @@ a, i {
   padding: 10px;
   background-color: aliceblue;
   border-radius: 20px;
-  margin-top: 1em;
   text-align: center;
 }
 
@@ -118,20 +118,22 @@ form > * {
 textarea {
   padding: 10px;
   border: 0;
-  border-bottom: 2px solid #6F2DBD;
   margin: 0;
   font-family: inherit;
-  background-color: #b298dc43;
-  border-radius: 5px 5px 0px 0px;
+  background-color: #c8acf581;
+  border-radius: 5px 5px;
   width: 90%;
+  box-shadow: #0000003d 0px 2px 30px, #0000003d 0px 2px 10px;
+  transition: 0.5s;
 }
 
 
 textarea:focus {
-  background-color: #b298dc81;
-  border-bottom: 5px solid #6F2DBD;
+  outline: #b298dc81;
+  background-color: #c2a6ef81;
+  outline: none;
   transition: all 0.5s;
-  outline: solid 1px #B298DC;
+  box-shadow: inset #0000003d 0px 2px 60px, inset #0000003d 0px 2px 30px;
 }
 
 .content-card, 
@@ -139,4 +141,36 @@ textarea:focus {
 .links {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 11px;
   max-width: 40vw;
+}
+
+select {
+  background-color: #c2a6ef81;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 11px;
+  margin: 1em;
+  flex-grow: 2;
+  border: none;
+  padding: 10px 5px;
+}
+
+select:focus {
+  box-shadow: inset #0000003d 0px 6px 11px;
+}
+
+.select {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.textarea {
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  margin: 1em;
+  height: 3em;
+  padding: 10px 5px;
 }
