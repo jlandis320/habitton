@@ -222,7 +222,7 @@ button:active {
   transition: transform 0.5s;
 }
 
-.links{
+.links {
   display: flex;
   width: 200px;
   height: 100px;
@@ -238,5 +238,13 @@ button:active {
   .content-card,
   .links {
     max-width: 90vw;
+  }
+
+  button {
+    color: black;
+  }
+
+  body {
+    font-size: 14px;
   }
 }
