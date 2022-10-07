@@ -247,7 +247,7 @@ button:active {
   .habit-card,
   .content-card,
   .links {
-    max-width: 90vw;
+    max-width: 95vw;
   }
 
   button {
