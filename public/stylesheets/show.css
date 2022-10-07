@@ -6,7 +6,6 @@
   border-radius: 20px;
   /* margin-top: 5vh; */
   text-align: center;
-  margin: 0;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -36,6 +35,4 @@ svg {
   height: 1em;
 }
 
-button:hover {
-  cursor: pointer;
-}
+

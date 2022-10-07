@@ -47,6 +47,10 @@ h1 {
   margin: 1rem;
 }
 
+p {
+  margin-top: 1em;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -141,6 +145,7 @@ textarea:focus {
 .links {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 11px;
   max-width: 40vw;
+  margin: 0 0 1em 0;
 }
 
 select {
@@ -173,4 +178,22 @@ textarea {
   margin: 1em;
   height: 3em;
   padding: 10px 5px;
+}
+
+button {
+  border: 0;
+  box-shadow: #0000003d 0 5px 11px, #0000003d 0 3px 8px;
+  border-radius: 5px;
+
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(130%);
+  transition: transform 0.5s;
+}
+
+button:active {
+  transform: scale(.80);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
