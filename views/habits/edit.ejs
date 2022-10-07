@@ -2,8 +2,8 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1> <%= title %> </h1>
-  <p>Change the category or edit habit below:</p>
+  <h1> Edit Your Habit </h1>
+  <p>Change or update your habit:</p>
 <div class="content-card">
 <form id="new-form" action="/habits/<%= habit._id %>?_method=PUT" method="POST">
   <div class="select">

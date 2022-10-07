@@ -173,6 +173,7 @@ select:focus {
   display: flex;
   justify-content: stretch;
   align-items: center;
+  width: 80%;
 }
 
 .textarea {
