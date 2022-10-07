@@ -197,3 +197,46 @@ button:active {
   transform: scale(.80);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.habit-card {
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.habit-card {
+  min-width: 10vw;
+  width: 80vw;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  transition: transform 0.5s;
+}
+
+.links{
+  display: flex;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color: #c8abf8;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: transform 0.5s;
+}
+
+@media only screen and (min-width:375px) {
+  .habit-card,
+  .content-card,
+  .links {
+    max-width: 90vw;
+  }
+}

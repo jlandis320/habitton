@@ -10,16 +10,7 @@ img {
 
 }
 
-.links{
-  display: flex;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  background-color: #c8abf8;
-  margin-top: 20px;
-  border-radius: 20px;
-  transition: transform 0.5s;
-}
+
 
 .links:hover{
   background-color: #6f2dbd;
