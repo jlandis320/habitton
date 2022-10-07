@@ -7,7 +7,7 @@
   <div class="body">
   <% habits.forEach(habit => { %> 
     <a href="/habits/<%= habit.id %> ">
-    <div class="habit-card">
+    <div class="habit-card hc-idx">
     <div id="category"><%= habit.category %></div>
     <p><%= habit.habit %></p>
   </div>
