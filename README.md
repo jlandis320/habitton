@@ -13,8 +13,10 @@ Mark your habits as complete each day and rack up completion dots!
 [Launch Habitton](https://habitton.fly.dev/)
 
 ## Screenshots
-
->to be added when styling is finished
+![Screenshot of welcome page](public/assets/Habitton1.png)
+![Screenshot of new habit view](public/assets/Habitton2.png)
+![Screenshot of habit tracking view](public/assets/Habitton3.png)
+![Screenshot of all habits view](public/assets/Habitton4.png)
 
 ## Technologies Used
 
